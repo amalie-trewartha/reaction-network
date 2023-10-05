@@ -63,7 +63,8 @@ class ExperimentalReferenceEntry(ComputedEntry):
 
     def get_new_temperature(self, new_temperature: float) -> ExperimentalReferenceEntry:
         """
-        Return a copy of the NISTReferenceEntry at the new specified temperature.
+        Return a copy of the ExperimentalReferenceEntry at the new specified
+        temperature.
 
         Args:
             new_temperature: The new temperature to use [K]
