@@ -142,6 +142,8 @@ class PathwaySolver(Solver):
         filter_interdependent: bool = True,
     ) -> PathwaySet:
         """
+        Solve for possible balanced reaction pathways (i.e., BalancedPathway objects),
+        given a net reaction.
 
         Args:
             net_rxn: The reaction representing the total reaction from precursors to
@@ -249,7 +251,7 @@ class PathwaySolver(Solver):
                 if not comp_matrices[n].any():  # type: ignore
                     del comp_matrices[n]
 
-        logger.info("Comp matrices done...")
+        logger.info("Comp matrices done.")
 
         num_cpu_jobs = 0
 
